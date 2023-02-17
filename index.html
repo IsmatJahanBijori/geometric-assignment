@@ -39,16 +39,16 @@
                         <img src="images/triangle.png" alt="Traingle" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Traingle</h2>
+                        <h2 id="triangle" class="card-title">Traingle</h2>
                         <p>Area (A) = 0.5 * b * h</p>
                         <div class="flex flex-rows-6 justify-around gap-2">
-                            <input type="text" placeholder="b" class="input w-[25%]" />
+                            <input id="base" type="text" placeholder="b" class="input w-[25%]" />
                             <p>cm</p>
-                            <input type="text" placeholder="h" class="input w-[25%]" />
+                            <input id="height" type="text" placeholder="h" class="input w-[25%]" />
                             <p>cm</p>
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button id="btn-triangle" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -59,16 +59,16 @@
                         <img src="images/rectangle.png" alt="Rectangle" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Rectangle</h2>
+                        <h2 id="rectangle" class="card-title">Rectangle</h2>
                         <p>Area (A) = w * l</p>
                         <div class="flex flex-rows-6 justify-around gap-2">
-                            <input type="text" placeholder="w" class="input w-[25%]" />
+                            <input id="width" type="text" placeholder="w" class="input w-[25%]" />
                             <p>cm</p>
-                            <input type="text" placeholder="l" class="input w-[25%]" />
+                            <input id="length" type="text" placeholder="l" class="input w-[25%]" />
                             <p>cm</p>
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button id="btn-rectangle" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -79,16 +79,16 @@
                         <img src="images/parallelogram.png" alt="Parallelogram" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Parallelogram</h2>
+                        <h2 id="parallelogram" class="card-title">Parallelogram</h2>
                         <p>Area (A) = b * h</p>
                         <div class="flex flex-rows-6 justify-around gap-2">
-                            <input type="text" placeholder="b" class="input w-[25%]" />
+                            <input id="base" type="text" placeholder="b" class="input w-[25%]" />
                             <p>cm</p>
-                            <input type="text" placeholder="h" class="input w-[25%]" />
+                            <input id="height" type="text" placeholder="h" class="input w-[25%]" />
                             <p>cm</p>
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button id="btn-parallelogram" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -99,16 +99,16 @@
                         <img src="images/rhombus.png" alt="Rhombus" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Rhombus</h2>
+                        <h2 id="rhombus" class="card-title">Rhombus</h2>
                         <p>Area (A) = 0.5 * d1 * d2</p>
                         <div class="flex flex-rows-6 justify-around gap-2">
-                            <input type="text" placeholder="d1" class="input w-[25%]" />
+                            <input id="d1" type="text" placeholder="d1" class="input w-[25%]" />
                             <p>cm</p>
-                            <input type="text" placeholder="d2" class="input w-[25%]" />
+                            <input id="d2" type="text" placeholder="d2" class="input w-[25%]" />
                             <p>cm</p>
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button id="btn-rhombus" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -119,16 +119,16 @@
                         <img src="images/pentagon.png" alt="Pentagon" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Pentagon</h2>
+                        <h2 id="pentagon" class="card-title">Pentagon</h2>
                         <p>Area (A) = 0.5 * p * b</p>
                         <div class="flex flex-rows-6 justify-around gap-2">
-                            <input type="text" placeholder="p" class="input w-[25%]" />
+                            <input id="perimeter" type="text" placeholder="p" class="input w-[25%]" />
                             <p>cm</p>
-                            <input type="text" placeholder="b" class="input w-[25%]" />
+                            <input id="apothem" type="text" placeholder="b" class="input w-[25%]" />
                             <p>cm</p>
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button id="btn-pentagon" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -139,23 +139,23 @@
                         <img src="images/ellipse.png" alt="Ellipse" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Ellipse</h2>
+                        <h2 id="ellipse" class="card-title">Ellipse</h2>
                         <p>Area (A) = 3.1416 * a * b </p>
                         <div class="flex flex-rows-6 justify-around gap-2">
-                            <input type="text" placeholder="a" class="input w-[25%]" />
+                            <input id="a-axis" type="text" placeholder="a" class="input w-[25%]" />
                             <p>cm</p>
-                            <input type="text" placeholder="b" class="input w-[25%]" />
+                            <input id="b-axis" type="text" placeholder="b" class="input w-[25%]" />
                             <p>cm</p>
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button id="btn-ellipse" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
             </div>
 
 
-            <!-- area calculation -->
+            <!-- area calculation table-->
             <div class="w-[30%] md:mx-0">
                 <h2 class="text-2xl font-semibold text-center mb-2 text-center">Area Calculation</h2>
                 <div class="">
@@ -163,34 +163,14 @@
                       <!-- head -->
                       <thead>
                         <tr>
-                          <th></th>
+                          <th>No</th>
                           <th>Name</th>
                           <th>Area</th>
-                          <th>Convert</th>
+                          <!-- <th>Convert</th> -->
                         </tr>
                       </thead>
-                      <tbody>
-                        <!-- row 1 -->
-                        <!-- <tr>
-                          <th>1</th>
-                          <td>Cy Ganderton</td>
-                          <td>Quality Control Specialist</td>
-                          <td>Blue</td>
-                        </tr> -->
-                        <!-- row 2 -->
-                        <!-- <tr>
-                          <th>2</th>
-                          <td>Hart Hagerty</td>
-                          <td>Desktop Support Technician</td>
-                          <td>Purple</td>
-                        </tr> -->
-                        <!-- row 3 -->
-                        <!-- <tr>
-                          <th>3</th>
-                          <td>Brice Swyre</td>
-                          <td>Tax Accountant</td>
-                          <td>Red</td>
-                        </tr> -->
+                      <tbody id="table-parent">
+                        
                       </tbody>
                     </table>
                   </div>
