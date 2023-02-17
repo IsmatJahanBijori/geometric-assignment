@@ -17,29 +17,32 @@ document.getElementById('btn-triangle').addEventListener('click', function () {
     const heightTriangleValue = parseInt(heightTriangle)
     // console.log(typeof heightTriangleValue)
 
-    if (typeof baseTriangleValue === 'number' && typeof heightTriangleValue === 'number') {
-        // area
-        const areaTraingle = parseFloat(0.5 * baseTriangleValue * heightTriangleValue).toFixed(2)
 
 
-        // adding row in table
-        count += 1
+    // if ((typeof baseTriangleValue === "number") && (typeof heightTriangleValue === "number")) {
+    //     // area
+    //     // const areaTraingle = parseFloat(0.5 * baseTriangleValue * heightTriangleValue).toFixed(2)
 
-        //    display
-        displayArea(triangle, areaTraingle)
-    }
-    else {
-        alert('Enter valid number')
-    }
+    //     // // adding row in table
+    //     // count += 1
+
+    //     // //    display
+    //     // displayArea(triangle, areaTraingle)
+    //     return1;
+    // }
+    // else {
+    //     alert('Enter valid number')
+    // }
+
 
     // // area
-    // const areaTraingle = parseFloat(0.5 * baseTriangleValue * heightTriangleValue).toFixed(2)
+    const areaTraingle = parseFloat(0.5 * baseTriangleValue * heightTriangleValue).toFixed(2)
 
     //     // adding row in table
-    //     count += 1
+        count += 1
 
-    // //    display
-    //     displayArea(triangle, areaTraingle)
+    //    display
+        displayArea(triangle, areaTraingle)
 
 
     // blank the field
@@ -219,3 +222,7 @@ function displayArea(name, area) {
     tableParent.appendChild(tr);
 }
 
+
+document.getElementById('blog').addEventListener('click', function(){
+    window.location.href="blog.html";
+})
