@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <header class="lg:px-12 drop-shadow-md">
+        <div class="navbar bg-base-300 mt-5">
+            <div class="navbar-start">
+                <!-- <a class="btn btn-ghost normal-case text-xl">Interactive Geometry Genius</a> -->
+                <h2 class="text-2xl font-bold">Interactive</h2>
+                <p>Geometry Genius</p>
+            </div>
+            <div class="navbar-end">
+                <a class="btn btn-primary">Blog</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="lg:px-12 mt-5 flex flex-col md:flex-row" style="overflow-x: hidden">
+
+            <!-- geometry card design -->
+            <div class="w-[70%] grid md:grid-cols-3 mx-auto md:mx-0">
+
+                <!-- card triangle -->
+                <div class="card w-96 bg-base-100 shadow-xl mb-5">
+                    <figure class="px-10 pt-10">
+                        <img src="images/triangle.png" alt="Traingle" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Traingle</h2>
+                        <p>Area (A) = 0.5 * b * h</p>
+                        <div class="flex flex-rows-6 justify-around gap-2">
+                            <input type="text" placeholder="b" class="input w-[25%]" />
+                            <p>cm</p>
+                            <input type="text" placeholder="h" class="input w-[25%]" />
+                            <p>cm</p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card Rectangle -->
+                <div class="card w-96 bg-base-100 shadow-xl mb-5">
+                    <figure class="px-10 pt-10">
+                        <img src="images/rectangle.png" alt="Rectangle" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Rectangle</h2>
+                        <p>Area (A) = w * l</p>
+                        <div class="flex flex-rows-6 justify-around gap-2">
+                            <input type="text" placeholder="w" class="input w-[25%]" />
+                            <p>cm</p>
+                            <input type="text" placeholder="l" class="input w-[25%]" />
+                            <p>cm</p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card Parallelogram -->
+                <div class="card w-96 bg-base-100 shadow-xl mb-5">
+                    <figure class="px-10 pt-10">
+                        <img src="images/parallelogram.png" alt="Parallelogram" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Parallelogram</h2>
+                        <p>Area (A) = b * h</p>
+                        <div class="flex flex-rows-6 justify-around gap-2">
+                            <input type="text" placeholder="b" class="input w-[25%]" />
+                            <p>cm</p>
+                            <input type="text" placeholder="h" class="input w-[25%]" />
+                            <p>cm</p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card Rhombus -->
+                <div class="card w-96 bg-base-100 shadow-xl mb-5">
+                    <figure class="px-10 pt-10">
+                        <img src="images/rhombus.png" alt="Rhombus" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Rhombus</h2>
+                        <p>Area (A) = 0.5 * d1 * d2</p>
+                        <div class="flex flex-rows-6 justify-around gap-2">
+                            <input type="text" placeholder="d1" class="input w-[25%]" />
+                            <p>cm</p>
+                            <input type="text" placeholder="d2" class="input w-[25%]" />
+                            <p>cm</p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card Pentagon -->
+                <div class="card w-96 bg-base-100 shadow-xl mb-5">
+                    <figure class="px-10 pt-10">
+                        <img src="images/pentagon.png" alt="Pentagon" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Pentagon</h2>
+                        <p>Area (A) = 0.5 * p * b</p>
+                        <div class="flex flex-rows-6 justify-around gap-2">
+                            <input type="text" placeholder="p" class="input w-[25%]" />
+                            <p>cm</p>
+                            <input type="text" placeholder="b" class="input w-[25%]" />
+                            <p>cm</p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card Ellipse -->
+                <div class="card w-96 bg-base-100 shadow-xl mb-5">
+                    <figure class="px-10 pt-10">
+                        <img src="images/ellipse.png" alt="Ellipse" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Ellipse</h2>
+                        <p>Area (A) = 3.1416 * a * b </p>
+                        <div class="flex flex-rows-6 justify-around gap-2">
+                            <input type="text" placeholder="a" class="input w-[25%]" />
+                            <p>cm</p>
+                            <input type="text" placeholder="b" class="input w-[25%]" />
+                            <p>cm</p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- area calculation -->
+            <div class="w-[30%] md:mx-0">
+                <h2 class="text-2xl font-semibold text-center mb-2 text-center">Area Calculation</h2>
+                <div class="">
+                    <table class="table w-full">
+                      <!-- head -->
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th>Name</th>
+                          <th>Area</th>
+                          <th>Convert</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- row 1 -->
+                        <!-- <tr>
+                          <th>1</th>
+                          <td>Cy Ganderton</td>
+                          <td>Quality Control Specialist</td>
+                          <td>Blue</td>
+                        </tr> -->
+                        <!-- row 2 -->
+                        <!-- <tr>
+                          <th>2</th>
+                          <td>Hart Hagerty</td>
+                          <td>Desktop Support Technician</td>
+                          <td>Purple</td>
+                        </tr> -->
+                        <!-- row 3 -->
+                        <!-- <tr>
+                          <th>3</th>
+                          <td>Brice Swyre</td>
+                          <td>Tax Accountant</td>
+                          <td>Red</td>
+                        </tr> -->
+                      </tbody>
+                    </table>
+                  </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
