@@ -73,11 +73,12 @@ document.getElementById('btn-triangle').addEventListener('click', function () {
 
 
 })
-document.getElementById('card-color').addEventListener("mouseover", function(){
-
-    const randomColor = Math.floor(Math.random()*16777215).toString(16);
-  document.body.style.backgroundColor = "#" + randomColor;
-})
+const colors=document.querySelectorAll('.cardColor')
+for (const color of colors){
+    color.addEventListener('mouseenter', function(e){
+e.target.parentNode.style.backgroundColor=Math.floor(Math.random()*16777215).toString(16)
+    })
+}
 // //   const setBg = () => {
 // //   const randomColor = Math.floor(Math.random()*16777215).toString(16);
 // //   document.body.style.backgroundColor = "#" + randomColor;
@@ -87,11 +88,11 @@ document.getElementById('card-color').addEventListener("mouseover", function(){
 // // card-color.addEventListener("click", setBg);
 // // setBg();
 
-// const divElem = document.getElementById("card-color");
+// const divElem = document.querySelectorAll(".cardColor");
 //     function randomcolor() {
 //         return Math.floor(Math.random()*16777215).toString(16);
 //     }
-//     divElem.addEventListener('click', () => {
+//     divElem.addEventListener('mouseenter', () => {
 //         divElem.style.backgroundColor = 
 //         "rgba('+randomcolor()+','+randomcolor()+','+randomcolor()+'\)"
 //     })
