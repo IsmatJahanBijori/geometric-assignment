@@ -78,11 +78,20 @@ document.getElementById('card-color').addEventListener("mouseover", function(){
     const randomColor = Math.floor(Math.random()*16777215).toString(16);
   document.body.style.backgroundColor = "#" + randomColor;
 })
-//   const setBg = () => {
-//   const randomColor = Math.floor(Math.random()*16777215).toString(16);
-//   document.body.style.backgroundColor = "#" + randomColor;
-// //   color.innerHTML = "#" + randomColor;
-// }
+// //   const setBg = () => {
+// //   const randomColor = Math.floor(Math.random()*16777215).toString(16);
+// //   document.body.style.backgroundColor = "#" + randomColor;
+// // //   color.innerHTML = "#" + randomColor;
+// // }
 
-// card-color.addEventListener("click", setBg);
-// setBg();
+// // card-color.addEventListener("click", setBg);
+// // setBg();
+
+// const divElem = document.getElementById("card-color");
+//     function randomcolor() {
+//         return Math.floor(Math.random()*16777215).toString(16);
+//     }
+//     divElem.addEventListener('click', () => {
+//         divElem.style.backgroundColor = 
+//         "rgba('+randomcolor()+','+randomcolor()+','+randomcolor()+'\)"
+//     })
