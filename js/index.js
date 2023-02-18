@@ -20,21 +20,41 @@ document.getElementById('btn-triangle').addEventListener('click', function () {
     // // console.log(typeof heightTriangleValue)
 
 
-// validation hoy nay
-    // if ((typeof baseTriangleValue === "number") && (typeof heightTriangleValue === "number")) {
-    //     // area
-    //     // const areaTraingle = parseFloat(0.5 * baseTriangleValue * heightTriangleValue).toFixed(2)
+//     // get inner text and input value hoiche
+//     const triangle = getInnerText('triangle');
+//     // console.log(triangle)
+//     const areaTriangle = getInputField('base', 'height')
+//     console.log(areaTriangle)
 
-    //     // // adding row in table
-    //     // count += 1
+// // validation hoy nay
+//     if (isNaN!=(areaTriangle) || (typeof areaTriangle!=='string') || (areaTriangle>0)) {
+//         // area
+//         // const areaTraingle = parseFloat(0.5 * baseTriangleValue * heightTriangleValue).toFixed(2)
 
-    //     // //    display
-    //     // displayArea(triangle, areaTraingle)
-    //     return1;
-    // }
-    // else {
-    //     alert('Enter valid number')
-    // }
+//         // adding row in table
+//         count += 1
+
+//         //    display
+//         displayArea(triangle, areaTraingle)
+//         // alert('Enter valid number')
+//            // // blank the field
+//     document.getElementById('base').value = '';
+//     document.getElementById('height').value = '';
+        
+//     }
+//     else {
+//         alert('Enter valid number')
+//     //     //     // adding row in table
+//     // count += 1
+
+//     // //    display
+//     // displayArea(triangle, areaTriangle)
+
+
+//     // // blank the field
+//     // document.getElementById('base').value = '';
+//     // document.getElementById('height').value = '';
+//     }
 
 
 // get inner text and input value hoiche
@@ -42,10 +62,8 @@ document.getElementById('btn-triangle').addEventListener('click', function () {
     // console.log(triangle)
     const areaTriangle = getInputField('base', 'height')
     // console.log(areaTriangle)
-    // // area eta thik ache amar ager code
-    // const areaTraingle = parseFloat(0.5 * baseTriangleValue * heightTriangleValue).toFixed(2)
-
-    //     // adding row in table
+   
+    // adding row in table
     count += 1
 
     //    display
@@ -235,6 +253,8 @@ function getInnerText(id) {
     const geometry = document.getElementById(id).innerText
     return geometry
 }
+
+// get input field
 function getInputField(id, id) {
     // const triangle = document.getElementById('triangle').innerText
     // base
@@ -249,7 +269,7 @@ function getInputField(id, id) {
     const heightGeometryValue = parseInt(heightGeometry)
     // console.log(typeof heightTriangleValue)
 
-    const area = parseFloat(0.5 * baseGeometryValue * heightGeometryValue).toFixed(2)
+    const area = (parseFloat(0.5 * baseGeometryValue * heightGeometryValue).toFixed(2))
     return area
 }
 
@@ -264,7 +284,7 @@ function displayArea(name, area) {
     tr.innerHTML = `<tr>
         <th>${count}</th>
         <td>${name}</td>
-        <td>${area}</td>
+        <td>${area} cm<sub>2</td>
         <td><button class="bg-blue-500 rounded-md p-2 font-semibold">Convert to m<sub>2</button></td>
     </tr>`;
 
