@@ -1,24 +1,26 @@
 
 let count = 0
+
 // triangle
 
 document.getElementById('btn-triangle').addEventListener('click', function () {
 
-    const triangle = document.getElementById('triangle').innerText
-    // base
-    const baseTriangle = document.getElementById('base').value
-    // console.log(baseTriangle)
-    const baseTriangleValue = parseInt(baseTriangle)
-    // console.log(baseTriangleValue)
+    // const triangle = document.getElementById('triangle').innerText
 
-    // height
-    const heightTriangle = document.getElementById('height').value
-    // console.log(heightTriangle)
-    const heightTriangleValue = parseInt(heightTriangle)
-    // console.log(typeof heightTriangleValue)
+    // // base
+    // const baseTriangle = document.getElementById('base').value
+    // // console.log(baseTriangle)
+    // const baseTriangleValue = parseInt(baseTriangle)
+    // // console.log(baseTriangleValue)
+
+    // // height
+    // const heightTriangle = document.getElementById('height').value
+    // // console.log(heightTriangle)
+    // const heightTriangleValue = parseInt(heightTriangle)
+    // // console.log(typeof heightTriangleValue)
 
 
-
+// validation hoy nay
     // if ((typeof baseTriangleValue === "number") && (typeof heightTriangleValue === "number")) {
     //     // area
     //     // const areaTraingle = parseFloat(0.5 * baseTriangleValue * heightTriangleValue).toFixed(2)
@@ -35,14 +37,19 @@ document.getElementById('btn-triangle').addEventListener('click', function () {
     // }
 
 
-    // // area
-    const areaTraingle = parseFloat(0.5 * baseTriangleValue * heightTriangleValue).toFixed(2)
+// get inner text and input value hoiche
+    const triangle = getInnerText('triangle');
+    // console.log(triangle)
+    const areaTriangle = getInputField('base', 'height')
+    // console.log(areaTriangle)
+    // // area eta thik ache amar ager code
+    // const areaTraingle = parseFloat(0.5 * baseTriangleValue * heightTriangleValue).toFixed(2)
 
     //     // adding row in table
-        count += 1
+    count += 1
 
     //    display
-        displayArea(triangle, areaTraingle)
+    displayArea(triangle, areaTriangle)
 
 
     // blank the field
@@ -120,22 +127,27 @@ document.getElementById('btn-parallelogram').addEventListener('click', function 
 
 document.getElementById('btn-rhombus').addEventListener('click', function () {
 
-    const rhombus = document.getElementById('rhombus').innerText
-    // width
-    const diagonal1Rhombus = document.getElementById('d1').value
-    // console.log(baseTriangle)
-    const diagonal1RhombusValue = parseInt(diagonal1Rhombus)
-    // console.log(baseTriangleValue)
+    // const rhombus = document.getElementById('rhombus').innerText
+    // // width
+    // const diagonal1Rhombus = document.getElementById('d1').value
+    // // console.log(baseTriangle)
+    // const diagonal1RhombusValue = parseInt(diagonal1Rhombus)
+    // // console.log(baseTriangleValue)
 
-    // length
-    const diagonal2Rhombus = document.getElementById('d2').value
-    // console.log(heightTriangle)
-    const diagonal2RhombusValue = parseInt(diagonal2Rhombus)
-    // console.log(typeof heightTriangleValue)
+    // // length
+    // const diagonal2Rhombus = document.getElementById('d2').value
+    // // console.log(heightTriangle)
+    // const diagonal2RhombusValue = parseInt(diagonal2Rhombus)
+    // // console.log(typeof heightTriangleValue)
 
-    // area
-    const areaRhombus = parseFloat(0.5 * diagonal1RhombusValue * diagonal2RhombusValue).toFixed(2)
+    // // area
+    // const areaRhombus = parseFloat(0.5 * diagonal1RhombusValue * diagonal2RhombusValue).toFixed(2)
 
+    // get inner text and input value hoiche
+    const rhombus = getInnerText('rhombus');
+    // console.log(rhombus)
+    const areaRhombus = getInputField('d1', 'd2')
+    // console.log(areaRhombus)
     // adding row in table
     count += 1
 
@@ -150,22 +162,28 @@ document.getElementById('btn-rhombus').addEventListener('click', function () {
 
 document.getElementById('btn-pentagon').addEventListener('click', function () {
 
-    const pentagon = document.getElementById('pentagon').innerText
-    // base
-    const perimeterPentagon = document.getElementById('perimeter').value
-    // console.log(baseTriangle)
-    const perimeterPentagonValue = parseInt(perimeterPentagon)
-    // console.log(baseTriangleValue)
+    // const pentagon = document.getElementById('pentagon').innerText
+    // // base
+    // const perimeterPentagon = document.getElementById('perimeter').value
+    // // console.log(baseTriangle)
+    // const perimeterPentagonValue = parseInt(perimeterPentagon)
+    // // console.log(baseTriangleValue)
 
-    // height
-    const apothemTriangle = document.getElementById('apothem').value
-    // console.log(heightTriangle)
-    const apothemTriangleValue = parseInt(apothemTriangle)
-    // console.log(typeof heightTriangleValue)
+    // // height
+    // const apothemTriangle = document.getElementById('apothem').value
+    // // console.log(heightTriangle)
+    // const apothemTriangleValue = parseInt(apothemTriangle)
+    // // console.log(typeof heightTriangleValue)
 
-    // area
-    const areaPentagon = parseFloat(0.5 * perimeterPentagonValue * apothemTriangleValue).toFixed(2)
+    // // area
+    // const areaPentagon = parseFloat(0.5 * perimeterPentagonValue * apothemTriangleValue).toFixed(2)
 
+
+    // get inner text and input value hoiche
+    const pentagon = getInnerText('pentagon');
+    console.log(pentagon)
+    const areaPentagon = getInputField('perimeter', 'apothem')
+    console.log(areaPentagon)
     // adding row in table
     count += 1
 
@@ -209,6 +227,36 @@ document.getElementById('btn-ellipse').addEventListener('click', function () {
 })
 
 
+
+
+
+// get result
+function getInnerText(id) {
+    const geometry = document.getElementById(id).innerText
+    return geometry
+}
+function getInputField(id, id) {
+    // const triangle = document.getElementById('triangle').innerText
+    // base
+    const baseGeometry = document.getElementById(id).value
+    // console.log(baseTriangle)
+    const baseGeometryValue = parseInt(baseGeometry)
+    // console.log(baseTriangleValue)
+
+    // height
+    const heightGeometry = document.getElementById(id).value
+    // console.log(heightTriangle)
+    const heightGeometryValue = parseInt(heightGeometry)
+    // console.log(typeof heightTriangleValue)
+
+    const area = parseFloat(0.5 * baseGeometryValue * heightGeometryValue).toFixed(2)
+    return area
+}
+
+
+
+
+
 // display area
 function displayArea(name, area) {
     const tableParent = document.getElementById('table-parent')
@@ -217,12 +265,13 @@ function displayArea(name, area) {
         <th>${count}</th>
         <td>${name}</td>
         <td>${area}</td>
+        <td><button class="bg-blue-500 rounded-md p-2 font-semibold">Convert to m<sub>2</button></td>
     </tr>`;
 
     tableParent.appendChild(tr);
 }
 
-
-document.getElementById('blog').addEventListener('click', function(){
-    window.location.href="blog.html";
+// add blog page
+document.getElementById('blog').addEventListener('click', function () {
+    window.location.href = "blog.html";
 })
