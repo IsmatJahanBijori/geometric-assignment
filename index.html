@@ -19,7 +19,7 @@
             <div class="navbar-start">
                 <!-- <a class="btn btn-ghost normal-case text-xl">Interactive Geometry Genius</a> -->
                 <h2 class="text-2xl font-bold">Interactive</h2>
-                <p>Geometry Genius</p>
+                <p><span>  Geometry Genius</span></p>
             </div>
             <div class="navbar-end">
                 <a class="btn btn-primary" id="blog">Blog</a>
@@ -34,7 +34,7 @@
             <div class="w-[70%] grid md:grid-cols-3 mx-auto md:mx-0">
 
                 <!-- card triangle -->
-                <div class="card w-96 bg-base-100 shadow-xl mb-5">
+                <div class="card w-96 bg-base-100 shadow-xl mb-5" id="card-color">
                     <figure class="px-10 pt-10">
                         <img src="images/triangle.png" alt="Traingle" class="rounded-xl" />
                     </figure>
@@ -50,15 +50,12 @@
                         <div class="card-actions">
                             <button id="btn-triangle" class="btn btn-primary w-full">Calculate</button>
                         </div>
-                        <h6>
-                            <button id="genNew">C</button>
-                            <span id="color"></span>
-                          </h6>
                     </div>
                 </div>
+              
 
                 <!-- card Rectangle -->
-                <div class="card w-96 bg-base-100 shadow-xl mb-5">
+                <div class="card w-96 bg-base-100 shadow-xl mb-5" >
                     <figure class="px-10 pt-10">
                         <img src="images/rectangle.png" alt="Rectangle" class="rounded-xl" />
                     </figure>
@@ -160,7 +157,7 @@
 
 
             <!-- area calculation table-->
-            <div class="w-[30%] md:mx-0">
+            <div class=" md:mx-0 sm:w-full md:w-[30%]">
                 <h2 class="text-2xl font-semibold text-center mb-2 text-center">Area Calculation</h2>
                 <div class="">
                     <table class="table w-full">

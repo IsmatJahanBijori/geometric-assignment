@@ -70,21 +70,19 @@ document.getElementById('btn-triangle').addEventListener('click', function () {
     document.getElementById('height').value = '';
 
 
-    const setBg = () => {
-    const randomColor = Math.floor(Math.random()*16777215).toString(16);
-    document.section.style.backgroundColor = "#" + randomColor;
-    color.innerHTML = "#" + randomColor;
-  }
-  
-  genNew.addEventListener("click", setBg);
-  setBg();
+
 
 })
-// const setBg = () => {
-//     const randomColor = Math.floor(Math.random()*16777215).toString(16);
-//     document.section.style.backgroundColor = "#" + randomColor;
-//     color.innerHTML = "#" + randomColor;
-//   }
-  
-//   genNew.addEventListener("click", setBg);
-//   setBg();
+document.getElementById('card-color').addEventListener("mouseover", function(){
+
+    const randomColor = Math.floor(Math.random()*16777215).toString(16);
+  document.body.style.backgroundColor = "#" + randomColor;
+})
+//   const setBg = () => {
+//   const randomColor = Math.floor(Math.random()*16777215).toString(16);
+//   document.body.style.backgroundColor = "#" + randomColor;
+// //   color.innerHTML = "#" + randomColor;
+// }
+
+// card-color.addEventListener("click", setBg);
+// setBg();
